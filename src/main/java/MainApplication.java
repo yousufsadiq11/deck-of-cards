@@ -3,7 +3,7 @@ import com.github.appian.operations.DeckOperation;
 import lombok.extern.java.Log;
 
 @Log
-public class Main {
+public class MainApplication {
 
 
     public static void main(String[] args) {
