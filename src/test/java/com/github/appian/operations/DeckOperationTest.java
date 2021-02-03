@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DeckOperationTest {
+public class DeckOperationTest {
 
     private static final int DECK_SIZE = 52;
 

@@ -1,3 +1,5 @@
+package com.github.appian;
+
 import com.github.appian.model.Card;
 import com.github.appian.operations.DeckOperation;
 import lombok.extern.java.Log;

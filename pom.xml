@@ -10,7 +10,7 @@
 
   <properties>
     <lombok.version>1.18.18</lombok.version>
-    <java.version>7</java.version>
+    <java.version>8</java.version>
   </properties>
 
   <name>deck-of-cards</name>
@@ -51,10 +51,15 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
+        <artifactId>maven-jar-plugin</artifactId>
         <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>com.github.appian.MainApplication</mainClass>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
