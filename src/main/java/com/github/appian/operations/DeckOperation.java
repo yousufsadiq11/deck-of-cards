@@ -11,7 +11,7 @@ import java.util.Random;
 @Log
 public class DeckOperation {
 
-    private final List<Card> cardsList = new ArrayList<>();
+    protected final List<Card> cardsList = new ArrayList<>();
 
     public DeckOperation() {
         for (Suit suit : Suit.values()) {
