@@ -7,6 +7,18 @@
   <groupId>org.github</groupId>
   <artifactId>deck-of-cards</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>7</source>
+          <target>7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
   <name>deck-of-cards</name>
   <description>Appian deck of cards challenge</description>
@@ -15,6 +27,7 @@
 
     <dependency>
       <groupId>org.projectlombok</groupId>
+      <version>1.18.18</version>
       <artifactId>lombok</artifactId>
       <scope>provided</scope>
     </dependency>
